@@ -1,8 +1,6 @@
 /* For preloader */
 $(window).on('load', function(){
-
-	console.log('load');
-
+	//$('.preloader').delay(500).fadeOut('slow');
 });
 
 /* scripts ready */
