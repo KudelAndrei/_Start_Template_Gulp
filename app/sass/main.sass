@@ -1,65 +1,44 @@
+@import "fonts"
+@import "libs"
 @import "vars"
+//@import "loader"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
 
 html, body
 	height: 100%
-	margin: 0
-	padding: 0
 
 body
-	font-size: 14px
+	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.6
+	line-height: 1.75
 	font-family: $default-font
 	overflow-x: hidden
 
-a
-	text-decoration: none
-	color: #2782e9
-	&:hover
-		text-decoration: underline
 
-p
-	margin: 5px 0
 
-.wrap-email
-	background-color: #fafafa
-	width: 100%
-	padding: 20px 0
 
-.container	
-	width: 100%
-	max-width: 600px
-	margin: 0 auto
-	background-color: #fff
-	border-radius: 6px
-
-.email-content
-	border-bottom: 1px solid #ececec
-	padding: 12px 18px
-
-.email-logo
-	color: #55b9ff
-	&:hover
-		text-decoration: none
-	span
-		font-size: 26px
-		font-style: italic
-		font-weight: 600
-		margin-right: 10px
-
-.email-login, .email-team
-	margin: 0
-	padding: 0
-	list-style-type: none
-
-.email-question
-	margin: 20px 0
-	display: block
-
-.email-footer
-	text-align: center
-	color: #989898
-	font-size: 13px
 
 @import "media" // Всегда в конце
